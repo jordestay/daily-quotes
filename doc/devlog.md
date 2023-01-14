@@ -2,4 +2,21 @@
 ## 1.13.23  2.5h
 - initiated repo
 - changed user profile in win10 to remove space
-- remapped environment variables
+- remapped environment variables  
+### Initial Ideas    
+choose a random design theme  
+Quote search
+search box
+- rounded edges
+- search icon
+- prompt text
+Quote field
+- call for a random quote
+- display with my font
+My Input
+- add my own quotes that I like
+- Repeat project for fun facts
+Layout
+- center in page (v,h)
+- sticky bar at top of page
+- Quote layout

@@ -15,7 +15,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div> */}
-      <h1>Daily Quote</h1>
+      <h1>Daily Quotes</h1>
       <div className="card">
       <form
   onSubmit={(e: React.SyntheticEvent) => {

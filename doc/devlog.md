@@ -1,4 +1,10 @@
 # Devlog  
+## 1.14.23 1.5m  
+- read "Vite and React Basics"  
+- updated title on index.html  
+- very basic layout with h1, search field, button, and filler quote  
+- set up github pages (nothing but Title displays)  
+- troubleshot the page not showing up  
 ## 1.13.23  2.5h
 - initiated repo
 - changed user profile in win10 to remove space

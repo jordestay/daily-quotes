@@ -4,10 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/daily-quotes/",
-  root: '',
+  root: './',
   plugins: [react()],
   build: {
-    outDir: './'
+    outDir: '/docs'
   },
-  
+
 })

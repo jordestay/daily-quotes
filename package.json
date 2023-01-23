@@ -19,5 +19,9 @@
     "@vitejs/plugin-react": "^3.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:jordestay/daily-quotes.git",
+  "author": "jordestay <jordestay@gmail.com>",
+  "license": "MIT"
 }

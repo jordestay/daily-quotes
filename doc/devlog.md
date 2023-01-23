@@ -4,7 +4,7 @@
 - updated title on index.html  
 - very basic layout with h1, search field, button, and filler quote  
 - set up github pages (nothing but Title displays)  
-- troubleshot the page not showing up  
+- troubleshot the page not showing up     
 ## 1.13.23  2.5h
 - initiated repo
 - changed user profile in win10 to remove space

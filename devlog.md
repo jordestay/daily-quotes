@@ -1,11 +1,11 @@
 # Devlog  
 ## TODO  
-- UI: title, search bar, random quote, mobile first
 - search bar onEnterKey trigger onSubmit, form input, preventDefault
 - on search, change UI layout (move to sticky, position top of screen)
-## 1.26.23 1h
+## 1.26.23 2h
 - rebuilt project folder
 - added bootstrap
+- UI: title, search bar, random quote, mobile first  
 ## 1.14.23 1.5h  
 - read "Vite and React Basics"  
 - updated title on index.html  

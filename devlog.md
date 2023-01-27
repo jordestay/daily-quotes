@@ -1,7 +1,11 @@
 # Devlog  
 ## TODO  
 - search bar onEnterKey trigger onSubmit, form input, preventDefault
+    - if search bar is empty, return random (also on page load)
 - on search, change UI layout (move to sticky, position top of screen)
+## 1.27.23 1h
+- 
+
 ## 1.26.23 2h
 - rebuilt project folder
 - added bootstrap

@@ -1,108 +1,90 @@
-import { useState } from 'react';
-
-let ID_COUNT = 0;
-
-interface Todo {
-  id: number;
-  description: string;
-  completed: boolean;
-}
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [todos, setTodos] = useState<Todo[]>([]);
-  const [description, setDescription] = useState("");
-
-  function saveTodo() {
-    if (description === "") return;
-    const todo: Todo = {
-      id: ID_COUNT++,
-      description,
-      completed: false
-    };
-    setTodos([...todos, todo]);
-  }
-
-  function toggleTodo(todo: Todo) {
-    todo.completed = !todo.completed;
-    setTodos([...todos]);
-  }
-
+  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <div>
-        <input
-          type="text"
-          value={description}
-          placeholder="The thing you need to do"
-          onChange={e => setDescription(e.target.value)}
-        />
-        <button onClick={saveTodo}>Save</button>
+    <div className="App">
+      <div className="container">
+    <header className="justify-content-center py-3 mb-4 border-bottom">
+        <h1>Daily Quotes</h1>
+      
+      <div className="input-group my-3 shadow m-auto">
+        <input type="text" className="form-control" placeholder="Author Name" aria-label="Author Name" aria-describedby="basic-addon2" />
+          <div className="input-group-append">
+          <button onClick={() => setCount((count) => count + 1)} className="btn btn-primary" type="button">Search {count}</button>
+        </div>
       </div>
-      <div>
-        {
-          todos.map((todo) => (
-            <div key={todo.id}>
-              <input checked={todo.completed} type="checkbox" onChange={() => toggleTodo(todo)}/> {todo.description}
-            </div>
-          ))
-        }
-      </div>
-    </div>
+    </header>
+  </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-12 col-lg-8">
+
+      <div className="card mb-3">
+                          <figure>
+                            <blockquote className="blockquote mb-4">
+                              <p>
+                                <span className="font-italic">Sed ut perspiciatis unde omnis iste natus error sit
+                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                  quae ab illo inventore veritatis.</span>
+                              </p>
+                            </blockquote>
+                            <figcaption className="blockquote-footer">
+                              Annie Hall <cite title="Source Title">New York Times</cite>
+                            </figcaption>
+                          </figure>
+                  </div>
+                  <div className="card mb-3">
+                          <figure>
+                            <blockquote className="blockquote mb-4">
+                              <p>
+                                <span className="font-italic">Sed ut perspiciatis unde omnis iste natus error sit
+                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                  quae ab illo inventore veritatis.</span>
+                              </p>
+                            </blockquote>
+                            <figcaption className="blockquote-footer">
+                              Annie Hall <cite title="Source Title">New York Times</cite>
+                            </figcaption>
+                          </figure>
+                  </div>
+                  <div className="card mb-3">
+                          <figure>
+                            <blockquote className="blockquote mb-4">
+                              <p>
+                                <span className="font-italic">Sed ut perspiciatis unde omnis iste natus error sit
+                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                  quae ab illo inventore veritatis.</span>
+                              </p>
+                            </blockquote>
+                            <figcaption className="blockquote-footer">
+                              Annie Hall <cite title="Source Title">New York Times</cite>
+                            </figcaption>
+                          </figure>
+                  </div>
+        <div className="card">
+                          <figure>
+                            <blockquote className="blockquote mb-4">
+                              <p>
+                                <span className="font-italic">Sed ut perspiciatis unde omnis iste natus error sit
+                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                  quae ab illo inventore veritatis.</span>
+                              </p>
+                            </blockquote>
+                            <figcaption className="blockquote-footer">
+                              Annie Hall <cite title="Source Title">New York Times</cite>
+                            </figcaption>
+                          </figure>
+                  </div>
+          </div>
+          </div>
+          </div>
+          </div>
   )
 }
 
 export default App
-
-
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <div className="App">
-//       {/* <div>
-//         <a href="https://vitejs.dev" target="_blank">
-//           <img src="/vite.svg" className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://reactjs.org" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div> */}
-//       <h1>Daily Quotes test</h1>
-//       <div className="card">
-//       <form
-//   onSubmit={(e: React.SyntheticEvent) => {
-//     e.preventDefault();
-//     const target = e.target as typeof e.target & {
-//       searchTerm: { value: string };
-//     };
-//     const searchTerm = target.searchTerm.value; // typechecks!
-//     // etc...
-//   }}
-// >
-//   <div>
-//     <label>
-//       Author: 
-//       <input type="text" name="searchTerm" />
-//     </label>
-//   </div>
-//   </form>
-//         {/* <button onClick={() => setCount((count) => count + 1)}> */}
-//         <p>
-//         <button>
-//           Search
-//         </button>
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         [Random Generated Quote Here]
-//       </p>
-//     </div>
-//   )
-// }
-
-// export default App

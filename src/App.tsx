@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="container" onPageLoad={fetchQuote()}>
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-lg-8">
             <Quote content={content} author={author} slug={slug} />

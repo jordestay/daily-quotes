@@ -1,18 +1,16 @@
-export function Quote() {
+export function Quote({ content, author, slug }: Record<string, string>) {
   return (
-    <div className="card mb-3">
+    <div className="card mb-3 w-100">
       <figure>
         <blockquote className="blockquote mb-4">
           <p>
             <span className="font-italic">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis.
+              { content }
             </span>
           </p>
         </blockquote>
         <figcaption className="blockquote-footer">
-          Annie Hall <cite title="Source Title">New York Times</cite>
+          { author } <cite title="Source Title">{ slug }</cite>
         </figcaption>
       </figure>
     </div>
